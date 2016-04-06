@@ -1,0 +1,9 @@
+D:\Unit tests c#\Bank\BankTests\bin\Debug\BankTests.dll
+D:\Unit tests c#\Bank\BankTests\bin\Debug\BankTests.pdb
+D:\Unit tests c#\Bank\BankTests\bin\Debug\Bank.dll
+D:\Unit tests c#\Bank\BankTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Unit tests c#\Bank\BankTests\bin\Debug\Bank.pdb
+D:\Unit tests c#\Bank\BankTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+D:\Unit tests c#\Bank\BankTests\obj\Debug\BankTests.csprojResolveAssemblyReference.cache
+D:\Unit tests c#\Bank\BankTests\obj\Debug\BankTests.dll
+D:\Unit tests c#\Bank\BankTests\obj\Debug\BankTests.pdb

@@ -1,0 +1,5 @@
+D:\Unit tests c#\Bank\Bank\bin\Debug\Bank.dll
+D:\Unit tests c#\Bank\Bank\bin\Debug\Bank.pdb
+D:\Unit tests c#\Bank\Bank\obj\Debug\StringCalculator.csprojResolveAssemblyReference.cache
+D:\Unit tests c#\Bank\Bank\obj\Debug\Bank.dll
+D:\Unit tests c#\Bank\Bank\obj\Debug\Bank.pdb

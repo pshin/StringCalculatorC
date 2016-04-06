@@ -7,3 +7,4 @@ D:\Unit tests c#\StringCalculator\bin\Debug\Bank.dll
 D:\Unit tests c#\StringCalculator\bin\Debug\Bank.pdb
 D:\Unit tests c#\StringCalculator\obj\Debug\Bank.dll
 D:\Unit tests c#\StringCalculator\obj\Debug\Bank.pdb
+D:\Unit tests c#\StringCalculator\obj\Debug\StringCalculator.csprojResolveAssemblyReference.cache

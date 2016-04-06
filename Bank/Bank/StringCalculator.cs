@@ -8,6 +8,7 @@ namespace StringCalculatorNS
     /// </summary> 
     public class StringCalculator
     {
+        public string pattern = ",";
         public int sum = 0;
 
         public StringCalculator()
@@ -16,16 +17,12 @@ namespace StringCalculatorNS
 
         public void Add (string numbers)
         {
-            string pattern = ",";
-            string[] numbersArray = Regex.Split(numbers, pattern);
-            if (numbersArray.Length > 0)
-            {
-                for (int i = 0; i < numbersArray.Length; i++)
+            if (!String.IsNullOrEmpty(numbers)) {
+                Array.ForEach(Regex.Split(numbers, pattern), x =>
                 {
-                    sum += Int32.Parse(numbersArray[i]);
-                }
+                    sum += Int32.Parse(x);
+                });
             }
-            System.Console.WriteLine(sum);
         }
 
     }

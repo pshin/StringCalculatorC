@@ -9,7 +9,7 @@ namespace BankTests
     public class BankAccountTests
     {
         // unit test code
-        [TestMethod]
+        /*[TestMethod]
         public void SumOfEmptyString()
         {
             // arrange
@@ -23,7 +23,7 @@ namespace BankTests
             // assert
             int actual = calc.sum;
             Assert.AreEqual(expected, actual, "Sum of empty string is wrong");
-        }
+        }*/
 
         // unit test code
         [TestMethod]

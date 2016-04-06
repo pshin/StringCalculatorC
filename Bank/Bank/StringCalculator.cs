@@ -18,9 +18,9 @@ namespace StringCalculatorNS
         public void Add (string numbers)
         {
             if (!String.IsNullOrEmpty(numbers)) {
-                Array.ForEach(Regex.Split(numbers, pattern), x =>
+                Array.ForEach(Regex.Split(numbers, pattern), number =>
                 {
-                    sum += Int32.Parse(x);
+                    sum += Int32.Parse(number);
                 });
             }
         }

@@ -5,7 +5,7 @@ namespace StringCalculatorNS
 {
     public class StringCalculator
     {
-        public string Pattern = @",|\\n";
+        public string Pattern = @"\D|\n";
         public int Sum = 0;
 
         public StringCalculator()

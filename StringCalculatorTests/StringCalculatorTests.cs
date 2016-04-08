@@ -62,5 +62,19 @@ namespace StringCalculatorTests
             // assert
             actual.Should().Be(6);
         }
+
+        [Test]
+        public void should_handle_lines_between_numbers()
+        {
+            // arrange
+            const string numbers = "1\n2,3";
+            var calc = new StringCalculator();
+
+            // act
+            var actual = calc.Add(numbers);
+
+            // assert
+            actual.Should().Be(6);
+        }
     }
 }

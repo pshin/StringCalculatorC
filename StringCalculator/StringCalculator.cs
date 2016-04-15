@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace StringCalculatorNS
@@ -15,10 +16,12 @@ namespace StringCalculatorNS
         public int Add (string numbers)
         {
             if (!String.IsNullOrEmpty(numbers)) {
-                Array.ForEach(Regex.Split(numbers, Pattern), number =>
+                var matches = new Regex("\\d+").Match(numbers);
+                while (matches.Success)
                 {
-                    Sum += Int32.Parse(number);
-                });
+                    Sum += int.Parse(matches.Value);
+                    matches = matches.NextMatch();
+                }
             }
             return Sum;
         }

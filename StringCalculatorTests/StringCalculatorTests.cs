@@ -41,5 +41,21 @@ namespace StringCalculatorTests
             action.ShouldThrow<Exception>()
                 .WithMessage("Negatives not allowed " + "-2");
         }
+
+        [Test]
+        public void should_ignore_numbers_bigger_than_1000()
+        {
+            //arrange
+            var numbers = "//;\n1;1001";
+            var expected = 1;
+            var calc = new StringCalculator();
+
+            //act
+            var actual = calc.Add(numbers);
+
+            //assert
+            actual.Should().Be(expected);
+
+        }
     }
 }

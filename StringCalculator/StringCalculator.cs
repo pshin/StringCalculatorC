@@ -23,6 +23,9 @@ namespace StringCalculatorNS
                     if (number < 0)
                     {
                         throw new Exception("Negatives not allowed " + number);
+                    } else if (number > 1000)
+                    {
+                        number = 0;
                     }
                     else
                     {

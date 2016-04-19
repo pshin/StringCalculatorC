@@ -16,10 +16,18 @@ namespace StringCalculatorNS
         public int Add (string numbers)
         {
             if (!String.IsNullOrEmpty(numbers)) {
-                var matches = new Regex("\\d+").Match(numbers);
+                var matches = new Regex("[-\\d]+").Match(numbers);
                 while (matches.Success)
                 {
-                    Sum += int.Parse(matches.Value);
+                    var number = int.Parse(matches.Value);
+                    if (number < 0)
+                    {
+                        throw new Exception("Negatives not allowed " + number);
+                    }
+                    else
+                    {
+                        Sum += number;
+                    }
                     matches = matches.NextMatch();
                 }
             }

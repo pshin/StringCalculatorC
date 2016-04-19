@@ -1,4 +1,6 @@
 ﻿// unit test code
+
+using System;
 using NUnit.Framework;
 using FluentAssertions;
 using StringCalculatorNS;
@@ -23,6 +25,21 @@ namespace StringCalculatorTests
 
             // assert
             actual.Should().Be(expected);
+        }
+
+        [Test]
+        public void should_throw_error_negatives_not_allowed()
+        {
+            //arange
+            var numbers = "//;\n1;-2";
+            var calc = new StringCalculator();
+
+            //act
+            Action action = () => calc.Add(numbers);
+
+            //assert
+            action.ShouldThrow<Exception>()
+                .WithMessage("Negatives not allowed " + "-2");
         }
     }
 }
